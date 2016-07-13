@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebView.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> – Главная страница</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body style="height:100%">
+    <div style="height:80px; width:100%; background-color:#F2F2F2" >
+        <h3 style="padding-left:30px">Тестовое приложение работы с документами</h3>
+    </div>
+    <table>
+
+        <tr>
+            <td>            
+                <div style="background-color:#E0E0E0;width:180px;height:100%; float:left; padding-left:20px;">
+
+                    <label style="padding-top:5px" onclick="onclickDefault()">На главную</label><br />
+                    <label style="padding-top:5px" onclick="onclickSklads()">Склады</label><br />
+                    <label style="padding-top:5px" onclick="onclickPositions()">Должности</label><br />
+        
+                    <label style="padding-top:5px" onclick="onclickUser()">Пользователи</label><br />
+                    <label style="padding-top:5px" onclick="onclickMOLS()">МОЛ</label><br />
+                    <label style="padding-top:5px" onclick="onclickNomenklatura()">Номенклатура товара</label><br />
+                    <label style="padding-top:5px" onclick="onclickProducts()">Остатки товара</label><br />
+                    <label style="padding-top:5px" onclick="onclickProductIn()">Поступления товара</label><br />
+                    <label style="padding-top:5px" onclick="onclickProductOut()">Выдача товара</label><br />
+                </div>
+            </td>
+            <td>
+                <div >
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        <tr>
+    </table>
+        
+
+
+</body>
+</html>
+<script type="text/javascript" >
+    onclickDefault = function OnClickDefault() {
+        window.location.href = "Default.aspx";
+    }
+    onclickSklads = function OnClickSklads() {
+        window.location.href = "Sklads.aspx";
+    }
+    onclickPositions = function OnClickPositions() {
+        window.location.href = "Positions.aspx";
+    }
+    onclickUser = function OnClickUser() {
+        window.location.href = "Users.aspx";
+        //window.location.href = "./Views/User/Users.cshtml";
+    }
+    onclickMOLS=function OnClickMOLS()
+    {
+        window.location.href = "MOLS.aspx";
+    }
+
+    onclickNomenklatura = function OnClickNomenklatura() {
+        window.location.href = "Nomenklatura.aspx";
+    }
+
+    onclickProducts = function OnClickProducts() {
+        window.location.href = "Products.aspx";
+    }
+
+    onclickProductIn = function OnClickProductIn() {
+        window.location.href = "ProductsIn.aspx";
+    }
+    onclickProductOut = function OnClickProductOut() {
+        window.location.href = "ProductsOut.aspx";
+    }
+</script>
