@@ -39,6 +39,7 @@
                     <label style="padding-top:5px" onclick="onclickProducts()">Остатки товара</label><br />
                     <label style="padding-top:5px" onclick="onclickProductIn()">Поступления товара</label><br />
                     <label style="padding-top:5px" onclick="onclickProductOut()">Выдача товара</label><br />
+                    <label style="padding-top:5px" onclick="onclickReport()">Отчет</label><br />
                 </div>
             </td>
             <td>
@@ -88,5 +89,8 @@
     }
     onclickProductOut = function OnClickProductOut() {
         window.location.href = "ProductsOut.aspx";
+    }
+    onclickReport = function OnClickReport() {
+        window.location.href = "ReportMaterials.aspx";
     }
 </script>

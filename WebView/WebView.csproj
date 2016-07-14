@@ -76,6 +76,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -178,6 +179,7 @@
     <Content Include="Products.aspx" />
     <Content Include="ProductsIn.aspx" />
     <Content Include="ProductsOut.aspx" />
+    <Content Include="ReportMaterials.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -221,7 +223,9 @@
     <Content Include="Sklads.aspx" />
     <Content Include="Users.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -230,6 +234,28 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\web.config" />
     <Content Include="Views\User\Users.cshtml" />
+    <Content Include="TEST2DataSet.xsc">
+      <DependentUpon>TEST2DataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="TEST2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TEST2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TEST2DataSet.xss">
+      <DependentUpon>TEST2DataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="TEST2DataSet2.xsc">
+      <DependentUpon>TEST2DataSet2.xsd</DependentUpon>
+    </Content>
+    <None Include="TEST2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TEST2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="TEST2DataSet2.xss">
+      <DependentUpon>TEST2DataSet2.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -251,6 +277,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="GetMaterials.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -306,6 +333,13 @@
       <DependentUpon>ProductsOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportMaterials.aspx.cs">
+      <DependentUpon>ReportMaterials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportMaterials.aspx.designer.cs">
+      <DependentUpon>ReportMaterials.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -319,6 +353,16 @@
     </Compile>
     <Compile Include="Sklads.aspx.designer.cs">
       <DependentUpon>Sklads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TEST2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TEST2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TEST2DataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>
@@ -340,6 +384,9 @@
       <Project>{306a5f7b-a269-453a-97fb-a5731d6d8ebf}</Project>
       <Name>DBWork</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

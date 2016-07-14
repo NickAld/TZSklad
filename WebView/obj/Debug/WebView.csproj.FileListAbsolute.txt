@@ -28,6 +28,7 @@ D:\My\Projects\TZSklad\WebView\bin\Microsoft.ApplicationInsights.dll
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.AspNet.FriendlyUrls.dll
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My\Projects\TZSklad\WebView\bin\Microsoft.ReportViewer.WebForms.dll
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.ScriptManager.MSAjax.dll
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.ScriptManager.WebForms.dll
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.Web.Infrastructure.dll
@@ -40,6 +41,7 @@ D:\My\Projects\TZSklad\WebView\bin\System.Web.WebPages.Deployment.dll
 D:\My\Projects\TZSklad\WebView\bin\System.Web.WebPages.dll
 D:\My\Projects\TZSklad\WebView\bin\System.Web.WebPages.Razor.dll
 D:\My\Projects\TZSklad\WebView\bin\WebGrease.dll
+D:\My\Projects\TZSklad\WebView\bin\Microsoft.SqlServer.Types.dll
 D:\My\Projects\TZSklad\WebView\bin\ClassLibrary1.pdb
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.AI.DependencyCollector.xml
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.AI.ServerTelemetryChannel.xml
@@ -57,8 +59,21 @@ D:\My\Projects\TZSklad\WebView\bin\System.Web.Optimization.xml
 D:\My\Projects\TZSklad\WebView\bin\Antlr3.Runtime.pdb
 D:\My\Projects\TZSklad\WebView\bin\Newtonsoft.Json.xml
 D:\My\Projects\TZSklad\WebView\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\My\Projects\TZSklad\WebView\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
 D:\My\Projects\TZSklad\WebView\bin\ru\System.Web.Optimization.resources.dll
 D:\My\Projects\TZSklad\WebView\bin\ru\Microsoft.AspNet.FriendlyUrls.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\My\Projects\TZSklad\WebView\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 D:\My\Projects\TZSklad\WebView\obj\Debug\WebView.csprojResolveAssemblyReference.cache
+D:\My\Projects\TZSklad\WebView\obj\Debug\RdlCompile.cache
+D:\My\Projects\TZSklad\WebView\obj\Debug\RdlCompile.compiled
 D:\My\Projects\TZSklad\WebView\obj\Debug\WebView.dll
 D:\My\Projects\TZSklad\WebView\obj\Debug\WebView.pdb

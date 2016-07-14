@@ -22,6 +22,15 @@ namespace WebView {
         protected global::System.Web.UI.WebControls.DropDownList ddlListSklad;
         
         /// <summary>
+        /// ddlListNom элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlListNom;
+        
+        /// <summary>
         /// ddlMOL элемент управления.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace WebView {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button bAddNomOut;
+        
+        /// <summary>
+        /// tbResultAdd элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbResultAdd;
         
         /// <summary>
         /// dsSklad элемент управления.
