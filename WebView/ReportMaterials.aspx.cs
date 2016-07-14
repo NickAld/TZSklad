@@ -22,19 +22,30 @@ namespace WebView
         {
             if (!IsPostBack)
             {
-                odsIn.TypeName = typeof(GetMaterials).FullName;
+                //odsIn.TypeName = typeof(GetMaterials).FullName;
+                //odsIn.DataObjectTypeName = typeof(DataTable).FullName;
+                //odsIn.SelectMethod = "GetMaterials_In";
+                //odsIn.DataBind();
+
+                //odsOut.TypeName = typeof(GetMaterials).FullName;
+                //odsOut.DataObjectTypeName = typeof(DataTable).FullName;
+                //odsOut.SelectMethod = "GetMaterials_Out";
+                //odsOut.DataBind();
+
+                odsIn.TypeName = typeof(SourceGetting.getSklad).FullName;
                 odsIn.DataObjectTypeName = typeof(DataTable).FullName;
                 odsIn.SelectMethod = "GetMaterials_In";
-                
+                odsIn.DataBind();
 
-                //dtMetIn = dsTEST2DataSet.Tables["Materials_In"];
-                //var repDS = new ReportDataSource("MyDataSet", ds.Tables["Materials_In"]);
-                //ReportViewer1.LocalReport.DataSources.Add(repDS);
-                //ReportViewer1.LocalReport.Refresh();
+                odsOut.TypeName = typeof(SourceGetting.getSklad).FullName;
+                odsOut.DataObjectTypeName = typeof(DataTable).FullName;
+                odsOut.SelectMethod = "GetMaterials_Out";
+                odsOut.DataBind();
 
-
-                //ReportViewer1.LocalReport.DataSources.Where(x=>x.)
-
+                odsSklad.TypeName = typeof(SourceGetting.getSklad).FullName;
+                odsSklad.DataObjectTypeName = typeof(DataTable).FullName;
+                odsSklad.SelectMethod = "GetSklad";
+                odsSklad.DataBind();
             }
         }
     }

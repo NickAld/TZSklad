@@ -172,6 +172,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="App_Themes\Calendar\Calendar.skin" />
+    <Content Include="dsSklad.xsc">
+      <DependentUpon>dsSklad.xsd</DependentUpon>
+    </Content>
+    <None Include="dsSklad.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSklad.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dsSklad.xss">
+      <DependentUpon>dsSklad.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MOLS.aspx" />
     <Content Include="Nomenklatura.aspx" />
@@ -277,7 +288,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\RouteConfig2.cs" />
-    <Compile Include="GetMaterials.cs" />
+    <Compile Include="dsSklad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSklad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SourceGetting\GetMaterials.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -354,6 +370,7 @@
     <Compile Include="Sklads.aspx.designer.cs">
       <DependentUpon>Sklads.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SourceGetting\getSklad.cs" />
     <Compile Include="TEST2DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -387,6 +404,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

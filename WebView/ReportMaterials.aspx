@@ -5,16 +5,21 @@
     <div style="width:90%">
     <form runat="server">
         <asp:ScriptManager runat="server" ID="smScriptManager"></asp:ScriptManager>
-        <rsweb:ReportViewer ID="ReportViewer1" runat="server" ShowRefreshButton="true" Width="90%"
+        <rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="90%"
             Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
-            <LocalReport ReportPath="Report1.rdlc">
+            <LocalReport ReportPath="Report2.rdlc">
                 <DataSources>
-                    <rsweb:ReportDataSource DataSourceId="odsIn" Name="MyDataSet_In"/>
-                    <%--<rsweb:ReportDataSource DataSourceId="odsOut" Name="MyDataSet_Out"/>--%>
+                    <rsweb:ReportDataSource DataSourceId="odsIn" Name="SourceSklad"/>
+                    <rsweb:ReportDataSource DataSourceId="odsOut" Name="SourceSklad"/>
+                    <rsweb:ReportDataSource DataSourceId="odsSklad" Name="SourceSklad"/>
                 </DataSources>
             </LocalReport>
         </rsweb:ReportViewer>
         <asp:ObjectDataSource runat="server"  ID="odsIn">
+        </asp:ObjectDataSource>
+        <asp:ObjectDataSource runat="server"  ID="odsOut">
+        </asp:ObjectDataSource>
+        <asp:ObjectDataSource runat="server"  ID="odsSklad">
         </asp:ObjectDataSource>
         
     </form>
